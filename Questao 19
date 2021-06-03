@@ -1,0 +1,33 @@
+package acao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class questao19 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int pcompra, pvenda, lucro;
+		char nome;
+		
+		System.out.println("Qual a ação? ");
+		nome = sc.next().charAt(0);
+		System.out.println("Qual o preço de compra da ação? ");
+		pcompra = sc.nextInt();
+		System.out.println("Qual o preço de venda da ação? ");
+		pvenda = sc.nextInt();
+		
+		System.out.println("O nome da ação é: "+nome);
+		lucro = pvenda-pcompra;
+		
+		if (lucro > 1000) {
+ System.out.println("Detectamos uma ação com o lucro acima de R$1.000,00! ");
+	}else if (lucro < 200) {
+System.out.println("Detectamos uma ação com o lucro inferior a R$200,00! ");
+}
+		
+		System.out.println("O lucro total da empresa com essa ação foi de: R$"+lucro);
+}
+}
