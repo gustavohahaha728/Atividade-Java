@@ -1,0 +1,50 @@
+package atividadennn;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class questao18 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int idade = 0, maior = 0, menor = 9999, cont = 0, contM = 0;
+		double salario = 0, media = 0;
+		String sexo = "null", M = "M";
+
+		do {
+			System.out.println("Informe sua idade: ");
+			idade = sc.nextInt();
+			if (idade <= 18) {
+				System.out.println("Idade não permitida, programa encerrado.");
+				break;
+			}
+			System.out.println("Informe o sexo M para homem, F para mulher: ");
+			sexo = sc.next();
+			System.out.println("Informe o salario: ");
+			salario = sc.nextDouble();
+			media = media + salario;
+			if (idade > maior) {
+				maior = idade;
+			}
+			if (idade < menor) {
+				menor = idade;
+			}
+			if (sexo.equalsIgnoreCase(M)) {
+				if (salario <= 200) {
+					contM++;
+				}
+
+			}
+			cont++;
+		} while (idade > 18);
+		System.out.println("A media do salario do grupo: "+media/2);
+		System.out.println("A maior idade do grupo é: "+maior);
+		System.out.println("A menor idade do grupo é: "+menor);
+		System.out.println("A quantidade de mulheres com salario até 200: "+contM);
+
+	}
+
+	}
+
