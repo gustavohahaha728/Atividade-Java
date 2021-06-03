@@ -1,0 +1,43 @@
+package moh;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class questao20 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int n1, n2, media, b1, b2, b3, mediat;
+		
+		   System.out.println("Digite o 1° numero da média aritmética: ");
+		   n1 = sc.nextInt();
+		   System.out.println("Digite o 2° numero da média aritmética: ");
+		   n2 = sc.nextInt();
+		   
+		   media = (n1+n2)/2;
+		   
+		   System.out.println("A media aritmética é: "+media);
+		   
+		   System.out.println("Digite o 1° numero da média ponderada: ");
+		   b1 = sc.nextInt();
+		   System.out.println("Digite o 2° numero da média ponderada: ");
+		   b2 = sc.nextInt();
+		   System.out.println("Digite o 3° numero da média ponderada: ");
+		   b3 = sc.nextInt();
+		   
+		   if((b1>b2)&&(b1>b3)) {
+			   mediat = ((b1*6)+(b2*4)+(b3*2))/12;
+		   } else if ((b2>b1)&&(b2>b3)){
+		   mediat = ((b2*6)+(b1*4)+(b3*2))/12; 
+		   } else {
+			   mediat = ((b1*2)+(b2*4)+(b3*6))/12;
+		   }
+		   
+		   System.out.println("A media ponderada é: "+mediat);
+		   
+		   System.exit(0);
+	}
+
+}
