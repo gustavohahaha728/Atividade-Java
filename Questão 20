@@ -41,6 +41,7 @@ public class questao20 {
 		   System.out.println("A media ponderada é: "+mediat);
 		   
 		   System.exit(0);
+		   sc.close();
 	}
 
 }
