@@ -30,7 +30,7 @@ public class questao19 {
 System.out.println("Detectamos uma ação com o lucro inferior a R$200,00! ");
 }
 		
-		System.out.println("O lucro total da empresa com essa ação foi de: R$"+lucro);
+		System.out.println("O lucro total da empresa com essa ação foi de: R$"+lucro); 
 		sc.close();
 }
 }
