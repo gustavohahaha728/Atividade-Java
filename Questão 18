@@ -31,7 +31,7 @@ public class questao18 {
 			if (idade > maior) {
 				maior = idade;
 			}
-			if (idade < menor) {
+			if (idade < menor) { 
 				menor = idade;
 			}
 			if (sexo.equalsIgnoreCase(M)) {
