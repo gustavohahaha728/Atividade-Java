@@ -3,7 +3,7 @@ LINK DA EXPLICAÇÃO: https://youtu.be/QC0YDIFhNmo
 
 package moh;
 
-import java.util.Locale;
+import java.util.Locale; 
 import java.util.Scanner;
 
 public class questao20 {
