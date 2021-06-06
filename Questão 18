@@ -46,7 +46,7 @@ public class questao18 {
 		System.out.println("A maior idade do grupo é: "+maior);
 		System.out.println("A menor idade do grupo é: "+menor);
 		System.out.println("A quantidade de mulheres com salario até 200: "+contM);
-
+sc.close();
 	}
 
 	}
